@@ -8,7 +8,7 @@ window.addEventListener('scroll', (event) => {
     const positionPercent = Math.min(scrollY / limit, 1);
 
     header.style.backgroundColor = `rgba(255, 255, 255, ${0.12 * positionPercent})`;
-    header.style.top = `${12 - 12 * positionPercent}px`;
+    header.style.top = `-${12 * positionPercent}px`;
 
     if (scrollY > limit) {
       header.style.backdropFilter = 'blur(38px)';

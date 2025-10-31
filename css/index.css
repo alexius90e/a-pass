@@ -43,11 +43,11 @@ textarea {
 
 .header {
   position: fixed;
-  top: 16px;
+  top: 0;
   left: 0;
   right: 0;
   z-index: 999;
-  padding: 12px 0;
+  padding: 24px 0 12px;
   -webkit-transition-property: top, background-color, backdrop-filter;
   transition-property: top, background-color, backdrop-filter;
   -webkit-transition-timing-function: linear;
@@ -164,7 +164,7 @@ textarea {
 @media (max-width: 576px) {
   .header__menu-wrapper {
     position: absolute;
-    top: 24px;
+    top: 36px;
     right: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
