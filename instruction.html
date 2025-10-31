@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/index.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <a class="header__logo-link" href="#">
+              <img class="header__logo-link-image" src="./assets/logo.svg" alt="logo" />
+            </a>
+          </div>
+
+          <div class="header__menu">
+            <div class="header__menu-wrapper">
+              <div class="header__menu-title">Открыть личный кабинет</div>
+
+              <div class="header__menu-close"></div>
+
+              <div class="header__controls">
+                <button class="header__controls-button header__controls-business">
+                  Для бизнеса
+                </button>
+                <button class="header__controls-button header__controls-login">Войти</button>
+                <button class="header__controls-button header__controls-instruction">
+                  прочитать инструкцию
+                </button>
+              </div>
+
+              <nav class="header__social">
+                <span class="header__social-title">Контакты</span>
+
+                <a class="header__social-link" href="#">
+                  <img
+                    class="header__social-link-icon"
+                    src="./assets/telegram-icon.svg"
+                    alt="icon"
+                  />
+                </a>
+                <a class="header__social-link" href="#">
+                  <img
+                    class="header__social-link-icon"
+                    src="./assets/whatsapp-icon.svg"
+                    alt="icon"
+                  />
+                </a>
+                <a class="header__social-link" href="#">
+                  <img
+                    class="header__social-link-icon"
+                    src="./assets/whatsapp-icon-1.svg"
+                    alt="icon"
+                  />
+                </a>
+              </nav>
+            </div>
+          </div>
+
+          <div class="header__burger">
+            <button class="header__burger-button"></button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="instruction">
+        <div class="container">
+          <h2 class="instruction__title">Инструкция по установке</h2>
+
+          <div class="instruction__wrapper">
+            <div class="instruction__steps">
+              <div class="instruction__step">
+                <div class="instruction__step-title">шаг 1: Откройте Chrome Web Store</div>
+                <div class="instruction__step-text">
+                  Перейдите на страницу расширения A-PASS в <b>магазине Chrome.</b>
+                </div>
+              </div>
+              <div class="instruction__step">
+                <div class="instruction__step-title">шаг 2: Нажмите «Установить»</div>
+                <div class="instruction__step-text">
+                  На странице расширения нажмите синюю кнопку «Установить».
+                </div>
+              </div>
+              <div class="instruction__step">
+                <div class="instruction__step-title">Шаг 3: Подтвердите установку</div>
+                <div class="instruction__step-text">
+                  Всплывет окно с запросом на разрешения для расширения. Для завершения нажмите
+                  кнопку «Установить расширение».
+                </div>
+              </div>
+              <div class="instruction__step">
+                <div class="instruction__step-title">Шаг 4: Готово!</div>
+                <div class="instruction__step-text">
+                  Расширение будет установлено, и его значок появится справа в адресной строке
+                  браузера.
+                </div>
+              </div>
+            </div>
+
+            <div class="instruction__support">
+              <div class="instruction__support-title">Поддерживаемые браузеры:</div>
+
+              <div class="instruction__support-browsers">
+                <div class="instruction__support-browsers-item">
+                  <figure class="instruction__support-browsers-item-logo">
+                    <img
+                      class="instruction__support-browsers-item-logo-image"
+                      src="./assets/opera.png"
+                      alt="Opera"
+                    />
+                  </figure>
+                  <div class="instruction__support-browsers-item-name">Opera</div>
+                </div>
+
+                <div class="instruction__support-browsers-item">
+                  <figure class="instruction__support-browsers-item-logo">
+                    <img
+                      class="instruction__support-browsers-item-logo-image"
+                      src="./assets/chrome.png"
+                      alt="Chrome"
+                    />
+                  </figure>
+                  <div class="instruction__support-browsers-item-name">
+                    Google <br />
+                    Chrome
+                  </div>
+                </div>
+
+                <div class="instruction__support-browsers-item">
+                  <figure class="instruction__support-browsers-item-logo">
+                    <img
+                      class="instruction__support-browsers-item-logo-image"
+                      src="./assets/edge.png"
+                      alt="Edge"
+                    />
+                  </figure>
+                  <div class="instruction__support-browsers-item-name">
+                    Microsoft <br />
+                    Edge
+                  </div>
+                </div>
+
+                <div class="instruction__support-browsers-item">
+                  <figure class="instruction__support-browsers-item-logo">
+                    <img
+                      class="instruction__support-browsers-item-logo-image"
+                      src="./assets/yandex.png"
+                      alt="Yandex"
+                    />
+                  </figure>
+                  <div class="instruction__support-browsers-item-name">Yandex</div>
+                </div>
+              </div>
+
+              <div class="instruction__support-subtitle">Требования:</div>
+
+              <ul class="instruction__support-list">
+                <li class="instruction__support-list-item">Версия браузера не ниже 88</li>
+                <li class="instruction__support-list-item">
+                  Windows 10+, macOS 10.14+ или Linux Ubuntu 16.04+
+                </li>
+                <li class="instruction__support-list-item">Разрешение на доступ к данным сайтов</li>
+                <li class="instruction__support-list-item">Разрешение на уведомления</li>
+              </ul>
+
+              <div class="instruction__support-subtitle">Безопасность:</div>
+
+              <div class="instruction__support-description">
+                A-Pass Key генерирует криптографическое доказательство, которое может быть передано
+                по открытым каналам без разглашения чувствительных данных.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="footer__top">
+              <div class="footer__info">
+                <div class="footer__info-logo">
+                  <a class="footer__info-logo-link" href="#">
+                    <img
+                      class="footer__info-logo-link-image"
+                      src="./assets/logo-footer.svg"
+                      alt="logo"
+                    />
+                  </a>
+                </div>
+                <div class="footer__info-slogan">
+                  Будущее без паролей: быстро, безопасно, законно
+                </div>
+              </div>
+
+              <div class="footer__menu">
+                <div class="footer__menu-block footer__menu-block_navigation">
+                  <div class="footer__menu-title">Навигация</div>
+                  <nav class="footer__menu-nav">
+                    <a class="footer__menu-nav-link" href="#">
+                      <span class="footer__menu-nav-link-text">Главная</span>
+                    </a>
+                    <a class="footer__menu-nav-link" href="#">
+                      <span class="footer__menu-nav-link-text">Преимущества</span>
+                    </a>
+                    <a class="footer__menu-nav-link" href="#">
+                      <span class="footer__menu-nav-link-text">Инструкция</span>
+                    </a>
+                  </nav>
+                </div>
+
+                <div class="footer__menu-block footer__menu-block_social">
+                  <div class="footer__menu-title">Контакты</div>
+                  <nav class="footer__menu-nav">
+                    <a class="footer__menu-nav-link footer__menu-nav-link_social" href="#">
+                      <span class="footer__menu-nav-link-text">telegram</span>
+                      <img
+                        class="footer__menu-nav-link-icon"
+                        src="./assets/telegram-icon.svg"
+                        alt="icon"
+                      />
+                    </a>
+                    <a class="footer__menu-nav-link footer__menu-nav-link_social" href="#">
+                      <span class="footer__menu-nav-link-text">whatsapp</span>
+                      <img
+                        class="footer__menu-nav-link-icon"
+                        src="./assets/whatsapp-icon.svg"
+                        alt="icon"
+                      />
+                    </a>
+                    <a class="footer__menu-nav-link footer__menu-nav-link_social" href="#">
+                      <span class="footer__menu-nav-link-text">email</span>
+                      <img
+                        class="footer__menu-nav-link-icon"
+                        src="./assets/whatsapp-icon-1.svg"
+                        alt="icon"
+                      />
+                    </a>
+                  </nav>
+                </div>
+              </div>
+
+              <div class="footer__controls">
+                <button class="footer__controls-business">Для бизнеса</button>
+
+                <button class="footer__controls-login">Войти</button>
+
+                <button class="footer__controls-trial">
+                  <span class="footer__controls-trial-text">Попробовать бесплатно</span>
+                  <span class="footer__controls-trial-icon"></span>
+                </button>
+
+                <a class="footer__controls-instruction" href="./instruction.html">
+                  <span class="footer__controls-instruction-text">прочитать инструкцию</span>
+                  <span class="footer__controls-instruction-icon"></span>
+                </a>
+              </div>
+            </div>
+
+            <div class="footer__bottom">
+              <span class="footer__bottom-copyright">© 2025 A-Pass. Все права защищены.</span>
+              <a class="footer__bottom-policy" href="#">Политика конфиденциальности</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
