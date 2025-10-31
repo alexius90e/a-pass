@@ -6,22 +6,66 @@
     <title>Title</title>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/index.css" />
-    <script type="module" src="./js/index.js" defer></script>
+    <script src="./js/index.js" defer></script>
   </head>
 
   <body>
     <header class="header">
       <div class="container">
-        <div>
-          <div>
-            <a href="#">
-              <img src="./assets/logo.svg" alt="logo" />
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <a class="header__logo-link" href="#">
+              <img class="header__logo-link-image" src="./assets/logo.svg" alt="logo" />
             </a>
           </div>
 
-          <div>
-            <button>Для бизнеса</button>
-            <button>Войти</button>
+          <div class="header__menu">
+            <div class="header__menu-wrapper">
+              <div class="header__menu-title">Открыть личный кабинет</div>
+
+              <div class="header__menu-close"></div>
+
+              <div class="header__controls">
+                <button class="header__controls-button header__controls-business">
+                  Для бизнеса
+                </button>
+                <button class="header__controls-button header__controls-login">Войти</button>
+                <button class="header__controls-button header__controls-instruction">
+                  прочитать инструкцию
+                </button>
+              </div>
+
+              <nav class="header__social">
+
+                <span class="header__social-title">Контакты</span>
+
+                <a class="header__social-link" href="#">
+                  <img
+                    class="header__social-link-icon"
+                    src="./assets/telegram-icon.svg"
+                    alt="icon"
+                  />
+                </a>
+                <a class="header__social-link" href="#">
+                  <img
+                    class="header__social-link-icon"
+                    src="./assets/whatsapp-icon.svg"
+                    alt="icon"
+                  />
+                </a>
+                <a class="header__social-link" href="#">
+                  <img
+                    class="header__social-link-icon"
+                    src="./assets/whatsapp-icon-1.svg"
+                    alt="icon"
+                  />
+                </a>
+              </nav>
+            </div>
+          </div>
+
+          <div class="header__burger">
+            <button class="header__burger-button"></button>
           </div>
         </div>
       </div>
@@ -293,6 +337,5 @@
         </div>
       </div>
     </footer>
-
   </body>
 </html>
