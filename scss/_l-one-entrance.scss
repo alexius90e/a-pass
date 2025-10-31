@@ -1,7 +1,18 @@
 .one-entrance {
   padding: 148px 0 136px;
   box-sizing: border-box;
-  background: url(../assets/bg.jpg) center / cover no-repeat;
+  border: 10px solid #ffffff;
+  border-bottom: 0;
+
+  @include laptop {
+    padding: 100px 0;
+  }
+
+  @include mobile {
+    padding: 65px 0 136px;
+    border-left: none;
+    border-right: none;
+  }
 
   &__wrapper {
     display: flex;
@@ -17,7 +28,6 @@
     font-weight: 400;
     font-size: 64px;
     line-height: 106%;
-    letter-spacing: -0.03em;
     text-align: center;
     color: #fff;
 
@@ -26,9 +36,10 @@
       font-size: 52px;
     }
 
-    @include laptop {
+    @include mobile {
       margin-bottom: 40px;
       font-size: 45px;
+      text-align: left;
     }
   }
 
@@ -65,13 +76,11 @@
     }
 
     &_business {
-      background: rgba(119, 129, 156, 0.24);
-      backdrop-filter: blur(33.599998474121094px);
+      background: rgba(119, 129, 156, 0.39);
     }
 
     &_users {
       background-color: rgba(104, 115, 144, 0.81);
-      backdrop-filter: blur(33.599998474121094px);
     }
 
     &-tag {
@@ -83,10 +92,16 @@
       font-weight: 500;
       font-size: 13px;
       line-height: 118%;
-      letter-spacing: -0.03em;
       color: #fff;
       border-radius: 8px;
-      background: rgba(124, 137, 171, 0.14);
+    }
+
+    &_business &-tag {
+      background: rgba(255, 255, 255, 0.14);
+    }
+
+    &_users &-tag {
+      background: rgba(255, 255, 255, 0.14);
     }
 
     &-title {

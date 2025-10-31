@@ -1,8 +1,18 @@
+@font-face {
+  font-family: 'Bicubik';
+  font-weight: 400;
+  src: url('../fonts/bicubik.otf') format('opentype');
+}
 
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 400;
+  src: url('../fonts/helveticaneuecyr_roman.otf') format('opentype');
+}
 
 html {
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'HelveticaNeueCyr', sans-serif;
   font-weight: 400;
   font-style: normal;
   scroll-behavior: smooth;
@@ -12,23 +22,13 @@ body {
   position: relative;
   margin: 0;
   overflow-y: scroll;
-  color: $black;
-  background-color: $white;
+  background: url(../assets/bg.jpg) center / cover no-repeat;
 }
 
 a,
 button,
 input,
 textarea {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'HelveticaNeueCyr', sans-serif;
   text-decoration: none;
-}
-
-figure {
-  margin: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
