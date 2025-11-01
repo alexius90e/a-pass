@@ -256,6 +256,12 @@
       @include mobile {
         display: none;
       }
+
+      &:disabled,
+      &.disabled {
+        color: #848484 !important;
+        background-color: #a8adbb !important;
+      }
     }
 
     &-business {
@@ -303,6 +309,11 @@
         display: flex;
       }
 
+      &:disabled,
+      &.disabled {
+        background-color: #a8adbb !important;
+      }
+
       &-text {
         font-family: 'Bicubik', sans-serif;
         font-weight: 400;
@@ -314,6 +325,11 @@
         transition-property: color;
         transition-timing-function: ease-out;
         transition-duration: 0.2s;
+      }
+
+      &:disabled &-text,
+      &.disabled &-text {
+        color: #848484 !important;
       }
 
       &-icon {
@@ -337,6 +353,16 @@
           transition-property: filter;
           transition-timing-function: ease-out;
           transition-duration: 0.1s;
+        }
+      }
+
+      &:disabled &-icon,
+      &.disabled &-icon {
+        background-color: rgba(255, 255, 255, 0.24) !important;
+
+        &::before {
+          opacity: 0.25;
+          filter: brightness(0%) !important;
         }
       }
     }
